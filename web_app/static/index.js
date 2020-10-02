@@ -1,11 +1,3 @@
-function sendreq(){
-
-}
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#form').onsubmit = () => {
@@ -32,9 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     p.innerHTML = data.tweets[i][0];
                     li.append(p);
                     document.querySelector('#search_list').append(li);
-
-
-
                 }
                 // document.querySelector('#result').innerHTML = contents;
             }
@@ -77,9 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
                    p.innerHTML = data.tweets[i][0];
                    li.append(p);
                    document.querySelector('#search_list').append(li);
-
-
-
                }
                // document.querySelector('#result').innerHTML = contents;
            }
@@ -87,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
                // document.querySelector('#result').innerHTML = 'There was an error.';
            }
        }
-
        // Add data to send with request
        const data = new FormData();
        data.append('search_query', search_query);
@@ -144,19 +129,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Send request
         request.send(data);
 
-
-
-
-
     return false;
    };
 
 
-      document.querySelector('#nsenti').onclick = () =>{
-     const senti = 'n';
-     document.querySelector('#search_list').innerHTML="";
-
-
+    document.querySelector('#nsenti').onclick = () =>{
+        const senti = 'n';
+        document.querySelector('#search_list').innerHTML="";
 
         // Initialize new request
         const request = new XMLHttpRequest();
@@ -180,9 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     p.innerHTML = data.tweets[i][0];
                     li.append(p);
                     document.querySelector('#search_list').append(li);}
-
-
-
                 }
                 // document.querySelector('#result').innerHTML = contents;
             }
@@ -198,20 +174,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Send request
         request.send(data);
 
-
-
-
-
     return false;
    };
 
 
 
-      document.querySelector('#opi').onclick = () =>{
-     const opi = 'o';
-     document.querySelector('#search_list').innerHTML="";
-
-
+    document.querySelector('#opi').onclick = () =>{
+        const opi = 'o';
+        document.querySelector('#search_list').innerHTML="";
 
         // Initialize new request
         const request = new XMLHttpRequest();
@@ -235,9 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     p.innerHTML = data.tweets[i][0];
                     li.append(p);
                     document.querySelector('#search_list').append(li);}
-
-
-
                 }
                 // document.querySelector('#result').innerHTML = contents;
             }
@@ -253,19 +220,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Send request
         request.send(data);
 
-
-
-
-
     return false;
    };
 
 
-      document.querySelector('#fac').onclick = () =>{
-     const opi = 'f';
-     document.querySelector('#search_list').innerHTML="";
-
-
+    document.querySelector('#fac').onclick = () =>{
+        const opi = 'f';
+        document.querySelector('#search_list').innerHTML="";
 
         // Initialize new request
         const request = new XMLHttpRequest();
@@ -290,8 +251,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     li.append(p);
                     document.querySelector('#search_list').append(li);}
 
-
-
                 }
                 // document.querySelector('#result').innerHTML = contents;
             }
@@ -307,13 +266,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Send request
         request.send(data);
 
-
-
-
-
     return false;
    };
-
-
-
 });
