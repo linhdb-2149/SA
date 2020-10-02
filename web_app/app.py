@@ -46,4 +46,4 @@ def sentiment_f():
 if __name__ == '__main__':
     vectorizer = joblib.load('./pre-trained/tf_idf.model')
     classifier = joblib.load('./pre-trained/vsentiment.model')
-    app.run(debug=False, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0')

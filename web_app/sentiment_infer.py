@@ -2,7 +2,6 @@ import re
 import string
 from unicodedata import normalize
 from pyvi import ViTokenizer
-import joblib
 
 
 def accent_normalizer(word):

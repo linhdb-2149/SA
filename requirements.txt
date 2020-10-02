@@ -1,3 +1,4 @@
 Flask==1.0.2
 pyvi==0.1
-
+joblib
+scikit-learn

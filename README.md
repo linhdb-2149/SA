@@ -6,8 +6,6 @@
 pip install -r requirements.txt
 ```
 
-Cài đặt `pysparnn` theo hướng dẫn tại [Facebook Github](https://github.com/facebookresearch/pysparnn).
-
 ### Chạy chương trình:
 
 ```
@@ -23,8 +21,6 @@ Dự án dựa trên [project's Rbhatia46](https://github.com/rbhatia46/Twitter-
 ```
 pip install -r requirements.txt
 ```
-
-Install `pysparnn` under the instruction here: [Facebook Github](https://github.com/facebookresearch/pysparnn).
 
 ### Running the program:
 
@@ -42,8 +38,6 @@ Project based on [project's Rbhatia46](https://github.com/rbhatia46/Twitter-Sent
 ```
 pip install -r requirements.txt
 ```
-
-  [Facebook Github](https://github.com/facebookresearch/pysparnn)にある案内に沿って、`pysparnn` をインストールしておいてください。
 
 ### プログラムを動かす:
 次のコマンドを実行してください。
