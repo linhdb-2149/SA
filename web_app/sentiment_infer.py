@@ -2,7 +2,6 @@ import re
 import string
 from unicodedata import normalize
 from pyvi import ViTokenizer
-import joblib
 
 
 def accent_normalizer(word):
@@ -12,7 +11,7 @@ def accent_normalizer(word):
         return word
     else:
         word = re.sub(accent[0], '', word)
-        span = re.match('.*([aăâeêioôơuưy])', word.lower()).end(1)
+        span = re.search('[bcdđghklmnpqrstvxy]*$', word).span()[0]
         word = word[:span] + accent[0] + word[span:]
         return normalize('NFC', word)
 
@@ -21,7 +20,7 @@ def normalize_text(text):
     text = re.sub(r'(\D)\1+', r'\1', text)
     text = text.lower()
 
-    # text = ' '.join([accent_normalizer(t) for t in text.split()])
+    text = ' '.join([accent_normalizer(t) for t in text.split()])
 
     text = text.translate(str.maketrans('', '', string.punctuation))
 

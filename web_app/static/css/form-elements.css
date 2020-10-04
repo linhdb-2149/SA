@@ -1,6 +1,5 @@
 
-input[type="text"], 
-input[type="password"] {
+input[type="text"]{
 	height: 50px;
     margin: 0;
     padding: 0 20px;
@@ -17,8 +16,7 @@ input[type="password"] {
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 
-input[type="text"]:focus, 
-input[type="password"]:focus {
+input[type="text"]:focus:focus {
 	outline: 0;
 	background: #fff;
     border: 3px solid #fff;
@@ -28,8 +26,6 @@ input[type="password"]:focus {
 input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder { color: #888; }
 input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder { color: #888; }
 input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder { color: #888; }
-
-
 
 button.btn {
 	height: 50px;
